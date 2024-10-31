@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro.css">
+    <title>Projects & Blogs - Portfolio</title>
+</head>
+<body>
+    <!-- Navigation bar in index.html, about.html, projects.html, contact.html, etc. -->
+<header class="container">
+    <div class="page-header">
+        <div class="logo">
+            <a href="index.html">Logo.</a>
+        </div>
+        <input type="checkbox" id="click"> <!-- Checkbox for mobile menu toggle -->
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class='bx bx-menu'></i> <!-- Icon for mobile menu -->
+            </div>
+        </label>
+        <ul>
+            <li><a href="index.html" class="active" style="--navAni:1">Home</a></li>
+            <li><a href="about.html" style="--navAni:2">About</a></li>
+            <li><a href="projects.html" style="--navAni:3">Projects</a></li>
+            <li><a href="contact.html" style="--navAni:4">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+
+    <!-- Projects & Blogs Section -->
+    <section class="projects container">
+        <h1>My Projects & Blogs</h1>
+
+        <!-- Blog Post 1: Learning Web Development -->
+        <article class="project">
+            <header>
+                <h2>Learning Web Development</h2>
+                <time datetime="2024-09-15">September 15, 2024</time>
+            </header>
+            <p>
+                My journey into web development started with learning HTML and CSS. It was amazing to see how simple code could transform a blank screen into something visually appealing. I’ve since moved on to JavaScript and am excited to continue building my skills in this area.
+            </p>
+        </article>
+
+        <!-- Blog Post 2: HTML vs. HTML5 -->
+        <article class="project">
+            <header>
+                <h2>HTML vs. HTML5: Key Differences and Improvements</h2>
+                <time datetime="2024-10-05">October 5, 2024</time>
+            </header>
+            <p>
+                HTML5, the latest version of HTML, brought several advancements over traditional HTML. While HTML provided a foundation for web structure, HTML5 introduced features that improved the user experience, design capabilities, and accessibility.
+            </p>
+            <p>
+                One major improvement in HTML5 is the addition of <strong>semantic elements</strong> like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>, which help developers structure content more meaningfully. These elements replace generic tags like <code>&lt;div&gt;</code> and make web pages more accessible.
+            </p>
+            <p>
+                HTML5 also introduced support for <strong>multimedia elements</strong> such as <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code>, allowing developers to embed media content directly without plugins. This significantly enhances multimedia integration on websites, making them more interactive and engaging.
+            </p>
+            <p>
+                Additionally, HTML5 improved <strong>form elements</strong> by introducing new input types, such as <code>&lt;input type="email"&gt;</code> and <code>&lt;input type="date"&gt;</code>. These enhancements simplify data validation and improve the user experience, especially on mobile devices.
+            </p>
+            <p>
+                Overall, HTML5 represents a significant step forward in web development, enabling more modern, accessible, and media-rich web applications.
+            </p>
+        </article>
+    </section>
+</body>
+</html>
