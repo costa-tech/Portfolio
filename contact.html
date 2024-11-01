@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Contact - Portfolio</title>
 </head>
 <body>
@@ -11,8 +11,8 @@
 <header class="container">
     <div class="page-header">
         <div class="logo">
-            <a href="index.html">Logo.</a>
-        </div>
+            <img src="Logo.png" alt="Your Logo" class="logo-image">
+    </div>
         <input type="checkbox" id="click"> <!-- Checkbox for mobile menu toggle -->
         <label for="click" class="mainicon">
             <div class="menu">
@@ -28,21 +28,32 @@
     </div>
 </header>
     
+<div class="contact-page">
+    <h1>Contact me</h1>
+    <p class="contact-description">
+        Feel free to get in touch! Fill out the form below with your details and message, and I'll get back to you as soon as possible.
+    </p>
 
-    <section class="contact container">
-        <h1>Contact Me</h1>
-        <form id="contact-form" action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="contact-container">
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Address</strong><br> 40/1, Temple Road, Kalubowila.</p>
+            <p><i class="fas fa-envelope"></i> <strong>Email</strong><br> rasandu17@gmail.com</p>
+            <p><i class="fas fa-phone"></i> <strong>Phone</strong><br> 077-6082132</p>
+        </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Send Message</h2>
+            <form id="contact-form" action="#" method="post">
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Type your message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
 </body>
 </html>
