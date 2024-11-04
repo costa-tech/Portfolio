@@ -91,7 +91,7 @@ header {
 
 /* Container - For main content only */
 .container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -176,6 +176,62 @@ header {
     padding: 0.5rem 0;
 }
 
+/* Project Section Styles */
+.projects {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Individual Project Article Styling */
+.project {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project header h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.project header time {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+/* Improve spacing between blog posts */
+.project + .project {
+    margin-top: 2rem;
+}
+
+
 /* Main Content */
 .section {
     min-height: calc(100vh - 80px);
@@ -198,6 +254,7 @@ header {
     opacity: 0;
     animation: leftSideAni 1s ease forwards;
     animation-delay: 0.5s;
+    margin-left: 80px;
 }
 
 .detail h3 {
@@ -310,6 +367,7 @@ header {
 
 .contact-info {
     text-align: left;
+    margin-left: 50px;
 }
 
 .contact-info p {
@@ -466,4 +524,126 @@ a[target="_blank"]:hover {
 .contact-form textarea:valid {
     border-color: #4dff88;
     background-color: rgba(77, 255, 136, 0.1);
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #1F252E;
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+    color: #dcdcdc;
+}
+
+/* media quaries for tablet and phone */
+/* Tablet (768px and up) */
+@media (max-width: 1024px) {
+    .page-header {
+        padding: 1rem 2rem;
+    }
+    
+    .page-header ul li a {
+        font-size: 1rem;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    .container, .about-section, .projects {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    .detail h1 {
+        font-size: 3rem;
+    }
+    
+    .detail h3 {
+        font-size: 1.3rem;
+    }
+    
+    .projects h1, .about-section h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 1rem;
+    }
+    
+    .page-header ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .page-header ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .container, .about-section, .projects {
+        width: 95%;
+    }
+    
+    .detail {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .detail h1 {
+        font-size: 2.5rem;
+    }
+    
+    .detail h3 {
+        font-size: 1.2rem;
+    }
+    
+    .social {
+        justify-content: center;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    
+    .contact-info, .contact-form {
+        margin: 0;
+    }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+    .page-header ul li a {
+        font-size: 0.9rem;
+    }
+    
+    .detail h1 {
+        font-size: 2rem;
+    }
+    
+    .detail p {
+        font-size: 1rem;
+    }
+    
+    .projects h1, .about-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .download-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .footer {
+        padding: 1rem 0;
+        font-size: 0.8rem;
+    }
 }
