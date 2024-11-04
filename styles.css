@@ -79,13 +79,16 @@ header {
     animation: navani .3s ease forwards;
 }
 
-.page-header ul li:nth-child(2) a {
+.about-section .about-container .info-section p:nth-child(3) {
     color: var(--primary-color);
 }
 
-.page-header ul li a.active,
+.page-header ul li a.active{
+    color: #f9532d; 
+}
+/* .page-header ul li a.active, */
 .page-header ul li a:hover {
-    color: #f9532d;
+    color: #f9532d; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -94,6 +97,26 @@ header {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.hire-me {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hire-me-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9532d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hire-me-button:hover {
+    background-color: #d6421c;
 }
 
 /* About Section */
