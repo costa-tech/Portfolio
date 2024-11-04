@@ -26,7 +26,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation Styles - Updated for full-width corners */
+/* Navigation Styles */
 header {
     position: sticky;
     top: 0;
