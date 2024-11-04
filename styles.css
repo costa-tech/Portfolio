@@ -608,25 +608,25 @@ a[target="_blank"]:hover {
 
     /* Adjust menu for mobile */
     .page-header ul {
-        display: none; /* Hide by default on mobile */
+        display: none; 
         flex-direction: column;
         gap: 0.5rem;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
         width: 100%;
-        background-color: var(--secondary-color); /* Adjust as needed */
+        background-color: var(--secondary-color); 
     }
     
     .page-header ul.active {
         display: flex;
-        max-height: 300px; /* Toggle visibility */
+        max-height: 300px; 
     }
     
     .page-header ul li a {
         font-size: 1rem;
         padding: 0.5rem 1rem;
-        text-align: center; /* Center-align links for mobile */
+        text-align: center; 
         color: #fff;
     }
     .container, .about-section, .projects {
