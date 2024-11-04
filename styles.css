@@ -97,6 +97,8 @@ header {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .hire-me {
@@ -260,6 +262,7 @@ header {
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .main {
@@ -324,12 +327,12 @@ header {
     animation-delay: 1.5s;
 }
 
-.img-w {
-    width: 100%;
-    height: auto;
+ .img-w {
+    width: 70%;
+    height: 70%;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
+} 
 
 /* Social Links */
 .social {
@@ -555,8 +558,11 @@ a[target="_blank"]:hover {
     background-color: #1F252E;
     color: #aaa;
     text-align: center;
-    padding: 1.5rem 0;
     font-size: 0.9rem;
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 200px;
 }
 
 .footer p {
