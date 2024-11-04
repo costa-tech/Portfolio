@@ -79,16 +79,9 @@ header {
     animation: navani .3s ease forwards;
 }
 
-.about-section .about-container .info-section p:nth-child(3) {
-    color: var(--primary-color);
-}
-
-.page-header ul li a.active{
-    color: #f9532d; 
-}
-/* .page-header ul li a.active, */
+.page-header ul li a.active,
 .page-header ul li a:hover {
-    color: #f9532d; 
+    color: #f9532d;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -600,22 +593,42 @@ a[target="_blank"]:hover {
     }
 }
 
-/* Mobile (768px and below) */
+.nav-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
-    .page-header {
-        padding: 1rem;
+    /* Show toggle button on mobile */
+    .nav-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
     }
-    
+
+    /* Adjust menu for mobile */
     .page-header ul {
+        display: none; /* Hide by default on mobile */
         flex-direction: column;
         gap: 0.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        width: 100%;
+        background-color: var(--secondary-color); /* Adjust as needed */
+    }
+    
+    .page-header ul.active {
+        display: flex;
+        max-height: 300px; /* Toggle visibility */
     }
     
     .page-header ul li a {
         font-size: 1rem;
         padding: 0.5rem 1rem;
+        text-align: center; /* Center-align links for mobile */
+        color: #fff;
     }
-    
     .container, .about-section, .projects {
         width: 95%;
     }
@@ -645,34 +658,5 @@ a[target="_blank"]:hover {
     
     .contact-info, .contact-form {
         margin: 0;
-    }
-}
-
-/* Small Mobile (480px and below) */
-@media (max-width: 480px) {
-    .page-header ul li a {
-        font-size: 0.9rem;
-    }
-    
-    .detail h1 {
-        font-size: 2rem;
-    }
-    
-    .detail p {
-        font-size: 1rem;
-    }
-    
-    .projects h1, .about-section h1 {
-        font-size: 1.8rem;
-    }
-    
-    .download-btn {
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
-    }
-    
-    .footer {
-        padding: 1rem 0;
-        font-size: 0.8rem;
     }
 }
